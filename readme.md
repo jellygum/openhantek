@@ -38,6 +38,22 @@ You need the following software, to build OpenHantek from source:
 
 We have build instructions available for [Linux](docs/build.md#linux), [Apple MacOSX](docs/build.md#apple) and [Microsoft Windows](docs/build.md#windows).
 
+## Build ( mac )
+
+<pre>
+[install]
+
+brew install qt5
+brew install fftw
+
+[build]
+
+mkdir build
+cd build
+
+cmake .. -DCMAKE_PREFIX_PATH=/usr/local/Cellar/qt/5.13.0
+</pre>
+
 ## Run OpenHantek
 You need an OpenGL 3.2+ or OpenGL ES 2.0+ capable graphics hardware for OpenHantek.
 OpenGL is prefered, if available. Overwrite this behaviour by starting OpenHantek
